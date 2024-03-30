@@ -122,7 +122,7 @@ table {
 
 /* =============== REUSABLE CSS CLASSES =============== */
 .container {
-    max-width: 1620px;
+    max-width: 1320px;
     margin-inline: auto;
     padding-inline: .75rem;
 }
@@ -133,7 +133,7 @@ table {
 }
 
 .section {
-    padding-block: 1rem;
+    padding-block: 2rem;
 }
 
 .section__title {
@@ -340,6 +340,7 @@ table {
 
 .home__img {
     justify-self: flex-end;
+    box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.815);
 }
 /* / carousel / */
 .carousel-container {
@@ -357,13 +358,13 @@ table {
 .carousel-item {
     width: 100%;
     flex: 0 0 auto;
-    height: 38rem;
+    /* height: 38rem; */
 }
 
 .carousel img {
     width: 100%;
-    height: 100%;
-    border-radius: 25px;
+    height: auto;
+    /* border-radius: 5px; */
 }
 
 .carousel-btn {
@@ -1673,6 +1674,7 @@ table {
 
     .home__img {
         justify-self: center;
+        
     }
 
     .btn {
@@ -1698,7 +1700,7 @@ table {
     .showcase__container,
     .footer__container,
     .details__container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* .login,
@@ -1749,6 +1751,7 @@ table {
     .login-register__container,
     .details__container {
         grid-template-columns: 100%;
+        left: 30%;
     }
 
     .tab__header,
@@ -1940,21 +1943,4 @@ table {
 
 .edit {
     font-size: var(--small-font-size);
-}
-
-/* ================ BREAKPOINTS =============== */
-/*  For large devices  */
-@media screen and (max-width: 1400px) {
-    .container {
-        max-width: 1140px;
-    }
-
-    .products__container,
-    .showcase__container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .accounts__container {
-        grid-template-columns: 3fr 9fr;
-    }
 }
