@@ -43,27 +43,35 @@
 
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                <img src="Assets/IMG/logo.svg" alt="" class="nav__logo-img">
-                <!-- REMAININGGGGGGGGGGGGGGGGGGG -->
+                <img src="./Assets/IMG/logo.svg" alt="" class="nav__logo-img">
             </a>
 
             <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-top">
+                    <a href="index.html" class="nav__menu-logo">
+                        <img src="./Assets/IMG/logo.svg" alt="">
+                    </a>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="index.html" class="nav__link ">Home</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="shop.html" class="nav__link active-link">Shop</a>
+                        <a href="shop.html" class="nav__link ">Shop</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="accounts.html" class="nav__link">My Account</a>
+                        <a href="accounts.html" class="nav__link ">My Account</a>
                     </li>
 
-                    <li class="nav__item">
-                        <a href="compare.html" class="nav__link">Compare</a>
-                    </li>
+
+                     
 
                     <li class="nav__item">
                         <a href="login-register.html" class="nav__link ">Login</a>
@@ -74,20 +82,24 @@
                     <input type="text" placeholder="Search for items..." class="form__input">
 
                     <button class="search__btn">
-                        <img src="Assets/IMG/search-line.png" alt="">
+                        <img src="./Assets/IMG/search-line.png" alt="">
                     </button>
                 </div>
             </div>
 
             <div class="header__user-actions">
                 <a href="wishlist.html" class="header__action-btn">
-                    <img src="Assets/IMG/heart-line.svg" alt="">
+                    <img src="./Assets/IMG/heart-line.svg" alt="">
                     <span class="count">3</span>
                 </a>
                 <a href="cart.html" class="header__action-btn">
-                    <img src="Assets/IMG/shopping-cart.svg" alt="">
+                    <img src="./Assets/IMG/shopping-cart.svg" alt="">
                     <span class="count">3</span>
                 </a>
+
+                <div class="header__action-btn nav__toggle" id="nav-toggle">
+                    <img src="./Assets/IMG/menu-burger.svg" alt="">
+                </div>
             </div>
         </nav>
     </header>
@@ -143,46 +155,46 @@
 
                         <tr>
                             <td>
-                                <img src="./Assets/IMG/product-1-2.jpg" alt="" class="order__img">
+                                <img src="./Assets/IMG/product-14-1.jpg" alt="" class="order__img">
                             </td>
 
                             <td>
-                                <h3 class="table__title">Yidarton Women Summer Blue</h3>
+                                <h3 class="table__title">Women Sweat Shirt</h3>
                                 <p class="table__quantity">x 1</p>
                             </td>
 
-                            <td><span class="table__price">$180.00</span></td>
+                            <td><span class="table__price">₹180.00</span></td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="./Assets/IMG/product-7-1.jpg" alt="" class="order__img">
+                                <img src="./Assets/IMG/product-16-1.webp" alt="" class="order__img">
                             </td>
 
                             <td>
-                                <h3 class="table__title">Women Short Sleeve Loose</h3>
+                                <h3 class="table__title">Embellished</h3>
                                 <p class="table__quantity">x 2</p>
                             </td>
 
-                            <td><span class="table__price">$35.00</span></td>
+                            <td><span class="table__price">₹35.00</span></td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="./Assets/IMG/product-2-1.jpg" alt="" class="order__img">
+                                <img src="./Assets/IMG/product-41-1.jpg" alt="" class="order__img">
                             </td>
 
                             <td>
-                                <h3 class="table__title">LDB MON Women Summer</h3>
+                                <h3 class="table__title">Soft Trouser</h3>
                                 <p class="table__quantity">x 2</p>
                             </td>
 
-                            <td><span class="table__price">$65.00</span></td>
+                            <td><span class="table__price">₹65.00</span></td>
                         </tr>
 
                         <tr>
                             <td><span class="order__subtitle">SubTotal</span></td>
-                            <td colspan="2"><span class="table__price">$280.00</span></td>
+                            <td colspan="2"><span class="table__price">₹280.00</span></td>
 
                         </tr>
 
@@ -193,7 +205,7 @@
 
                         <tr>
                             <td><span class="order__subtitle">Total</span></td>
-                            <td colspan="2"><span class="order__grand-total">$280.00</span></td>
+                            <td colspan="2"><span class="order__grand-total">₹280.00</span></td>
                         </tr>
                     </table>
 
@@ -215,7 +227,7 @@
                             <label for="" class="payment__label">Paypal</label>
                         </div>
 
-                        <button class="bn btn--md">Place Order</button>
+                        <button class="btn btn--md">Place Order</button>
                     </div>
                 </div>
             </div>
@@ -229,7 +241,7 @@
                     Sign up to Newsletter
                 </h3>
 
-                <p class="newsletter__description">...and receive $25 coupon for first shopping</p>
+                <p class="newsletter__description">...and receive ₹25 coupon for first shopping</p>
 
                 <form action="" class="newsletter__form">
                     <input type="text" placeholder="Enter your email" class="newsletter__input">
@@ -324,8 +336,8 @@
         </div>
 
         <div class="footer__bottom">
-            <p class="copyright">&copy; 2023 Evara. All rights reserved</p>
-            <span class="designer">Designed by CrypticalCoders</span>
+            <p class="copyright">&copy; 2024 Evara. All rights reserved</p>
+            <span class="designer">Designed by Prachi Thacker</span>
         </div>
     </footer>
 

@@ -43,26 +43,32 @@
 
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                <img src="Assets/IMG/logo.svg" alt="" class="nav__logo-img">
-                <!-- REMAININGGGGGGGGGGGGGGGGGGG -->
+                <img src="./Assets/IMG/logo.svg" alt="" class="nav__logo-img">
             </a>
 
             <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-top">
+                    <a href="index.html" class="nav__menu-logo">
+                        <img src="./Assets/IMG/logo.svg" alt="">
+                    </a>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="index.html" class="nav__link ">Home</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="shop.html" class="nav__link active-link">Shop</a>
+                        <a href="shop.html" class="nav__link ">Shop</a>
                     </li>
 
+                     
                     <li class="nav__item">
-                        <a href="accounts.html" class="nav__link">My Account</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="compare.html" class="nav__link">Compare</a>
+                        <a href="accounts.html" class="nav__link ">My Account</a>
                     </li>
 
                     <li class="nav__item">
@@ -74,20 +80,24 @@
                     <input type="text" placeholder="Search for items..." class="form__input">
 
                     <button class="search__btn">
-                        <img src="Assets/IMG/search-line.png" alt="">
+                        <img src="./Assets/IMG/search-line.png" alt="">
                     </button>
                 </div>
             </div>
 
             <div class="header__user-actions">
                 <a href="wishlist.html" class="header__action-btn">
-                    <img src="Assets/IMG/heart-line.svg" alt="">
+                    <img src="./Assets/IMG/heart-line.svg" alt="">
                     <span class="count">3</span>
                 </a>
                 <a href="cart.html" class="header__action-btn">
-                    <img src="Assets/IMG/shopping-cart.svg" alt="">
+                    <img src="./Assets/IMG/shopping-cart.svg" alt="">
                     <span class="count">3</span>
                 </a>
+
+                <div class="header__action-btn nav__toggle" id="nav-toggle">
+                    <img src="./Assets/IMG/menu-burger.svg" alt="">
+                </div>
             </div>
         </nav>
     </header>
@@ -96,11 +106,9 @@
         <!-- =============== BREADCRUMB =============== -->
         <section class="breadcrumb">
             <ul class="breadcrumb_list flex container ">
-                <li><a href="index.html" class="breadcrumb_link"></a>Home</li>
+                <li><a href="index.html" class="breadcrumb__link">Home</a></li>
                 <li><span class="breadcrumb__link">></span></li>
-                <li><span class="breadcrumb__link">Fashion</span></li>
-                <li><span class="breadcrumb__link">></span></li>
-                <li><span class="breadcrumb__link">Henley Shirt</span></li>
+                <li><span class="breadcrumb__link">Embellished Styled Backless Dress</span></li>
             </ul>
         </section>
 
@@ -108,21 +116,21 @@
         <section class="details section--lg">
             <div class="details__container container  grid">
                 <div class="details__group">
-                    <img src="./Assets/IMG/product-8-1.jpg" alt="" class="details__img">
+                    <img src="./Assets/IMG/product-39-1.jpg" alt="" class="details__img">
                     <div class="details__small-images grid">
-                        <img src="./Assets/IMG/product-8-2.jpg" alt="" class="details__small-img">
-                        <img src="./Assets/IMG/product-8-1.jpg" alt="" class="details__small-img">
-                        <img src="./Assets/IMG/product-8-2.jpg" alt="" class="details__small-img">
+                        <img src="./Assets/IMG/product-39-2.jpg" alt="" class="details__small-img">
+                        <img src="./Assets/IMG/product-39-1.jpg" alt="" class="details__small-img">
+                        <img src="./Assets/IMG/product-39-2.jpg" alt="" class="details__small-img">
                     </div>
                 </div>
 
                 <div class="details__group">
-                    <h3 class="details__title">Henley Shirt</h3>
-                    <p class="details__brand">Brands: <span>adidas</span></p>
+                    <h3 class="details__title">Embellished Styled Backless Dress</h3>
+                    <p class="details__brand">Brands: <span>Urbanic</span></p>
 
                     <div class="details__price flex">
-                        <span class="new__price">$116</span>
-                        <span class="old__price">$200.00</span>
+                        <span class="new__price">₹116</span>
+                        <span class="old__price">₹200.00</span>
                         <span class="save__price">25% Off</span>
                     </div>
 
@@ -197,7 +205,7 @@
 
                     <ul class="details__meta">
                         <li class="meta__list flex"><span>SKU:</span> FWM15VKT</li>
-                        <li class="meta__list flex"><span>Tags:</span> Cloth, Women, Dress</li>
+                        <li class="meta__list flex"><span>Tags:</span> Cloth, Women, Formal Shirt</li>
                         <li class="meta__list flex"><span>Avaibility:</span> 8 Items In Stock</li>
                     </ul>
                 </div>
@@ -409,8 +417,8 @@
                                     <i class="fi fi-rs-star"></i>
                                 </div>
                                 <div class="product__price flex">
-                                    <span class="new__price">$238.85</span>
-                                    <span class="old__price">$245.8</span>
+                                    <span class="new__price">₹238.85</span>
+                                    <span class="old__price">₹245.8</span>
                                 </div>
 
                                 <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i
@@ -453,8 +461,8 @@
                                     <i class="fi fi-rs-star"></i>
                                 </div>
                                 <div class="product__price flex">
-                                    <span class="new__price">$238.85</span>
-                                    <span class="old__price">$245.8</span>
+                                    <span class="new__price">₹238.85</span>
+                                    <span class="old__price">₹245.8</span>
                                 </div>
 
                                 <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i
@@ -497,8 +505,8 @@
                                     <i class="fi fi-rs-star"></i>
                                 </div>
                                 <div class="product__price flex">
-                                    <span class="new__price">$238.85</span>
-                                    <span class="old__price">$245.8</span>
+                                    <span class="new__price">₹238.85</span>
+                                    <span class="old__price">₹245.8</span>
                                 </div>
 
                                 <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i
@@ -541,8 +549,8 @@
                                     <i class="fi fi-rs-star"></i>
                                 </div>
                                 <div class="product__price flex">
-                                    <span class="new__price">$238.85</span>
-                                    <span class="old__price">$245.8</span>
+                                    <span class="new__price">₹238.85</span>
+                                    <span class="old__price">₹245.8</span>
                                 </div>
 
                                 <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i
@@ -560,7 +568,7 @@
                     Sign up to Newsletter
                 </h3>
 
-                <p class="newsletter__description">...and receive $25 coupon for first shopping</p>
+                <p class="newsletter__description">...and receive ₹25 coupon for first shopping</p>
 
                 <form action="" class="newsletter__form">
                     <input type="text" placeholder="Enter your email" class="newsletter__input">
@@ -656,8 +664,8 @@
         </div>
 
         <div class="footer__bottom">
-            <p class="copyright">&copy; 2023 Evara. All rights reserved</p>
-            <span class="designer">Designed by CrypticalCoders</span>
+            <p class="copyright">&copy; 2024 Evara. All rights reserved</p>
+            <span class="designer">Designed by Prachi Thacker</span>
         </div>
     </footer>
 

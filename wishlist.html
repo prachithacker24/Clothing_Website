@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
     <!-- =============== FLATICONS =============== -->
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -19,8 +20,9 @@
 
     <title>Document</title>
 </head>
+
 <body>
-     <!-- =============== HEADER =============== -->
+    <!-- =============== HEADER =============== -->
     <header class="header">
         <div class="header__top">
             <div class="header__container container">
@@ -42,27 +44,33 @@
 
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                <img src="Assets/IMG/logo.svg" alt="" class="nav__logo-img">
-                <!-- REMAININGGGGGGGGGGGGGGGGGGG -->
+                <img src="./Assets/IMG/logo.svg" alt="" class="nav__logo-img">
             </a>
 
             <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-top">
+                    <a href="index.html" class="nav__menu-logo">
+                        <img src="./Assets/IMG/logo.svg" alt="">
+                    </a>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="index.html" class="nav__link ">Home</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="shop.html" class="nav__link active-link">Shop</a>
+                        <a href="shop.html" class="nav__link ">Shop</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="accounts.html" class="nav__link">My Account</a>
+                        <a href="accounts.html" class="nav__link ">My Account</a>
                     </li>
 
-                    <li class="nav__item">
-                        <a href="compare.html" class="nav__link">Compare</a>
-                    </li>
 
                     <li class="nav__item">
                         <a href="login-register.html" class="nav__link ">Login</a>
@@ -73,20 +81,24 @@
                     <input type="text" placeholder="Search for items..." class="form__input">
 
                     <button class="search__btn">
-                        <img src="Assets/IMG/search-line.png" alt="">
+                        <img src="./Assets/IMG/search-line.png" alt="">
                     </button>
                 </div>
             </div>
 
             <div class="header__user-actions">
                 <a href="wishlist.html" class="header__action-btn">
-                    <img src="Assets/IMG/heart-line.svg" alt="">
+                    <img src="./Assets/IMG/heart-line.svg" alt="">
                     <span class="count">3</span>
                 </a>
                 <a href="cart.html" class="header__action-btn">
-                    <img src="Assets/IMG/shopping-cart.svg" alt="">
+                    <img src="./Assets/IMG/shopping-cart.svg" alt="">
                     <span class="count">3</span>
                 </a>
+
+                <div class="header__action-btn nav__toggle" id="nav-toggle">
+                    <img src="./Assets/IMG/menu-burger.svg" alt="">
+                </div>
             </div>
         </nav>
     </header>
@@ -95,15 +107,15 @@
         <!-- =============== BREADCRUMB =============== -->
         <section class="breadcrumb">
             <ul class="breadcrumb_list flex container ">
-                <li><a href="index.html" class="breadcrumb_link"></a>Home</li>
+                <li><a href="index.html" class="breadcrumb__link">Home</a></li>
                 <li><span class="breadcrumb__link">></span></li>
-                <li><span class="breadcrumb__link">Shop</span></li>
+                <li><a href="shop.html" class="breadcrumb__link">Shop</a></li>
                 <li><span class="breadcrumb__link">></span></li>
                 <li><span class="breadcrumb__link">Wishlist</span></li>
             </ul>
         </section>
 
-         <!-- =============== WISHLIST =============== -->
+        <!-- =============== WISHLIST =============== -->
         <section class="wishlist section--lg container">
             <div class="table__container">
                 <table class="table">
@@ -117,14 +129,14 @@
                     </tr>
 
                     <tr>
-                        <td><img src="./Assets/IMG/product-1-2.jpg" alt="" class="table__img"></td>
+                        <td><img src="./Assets/IMG/product-14-1.jpg" alt="" class="table__img"></td>
 
                         <td>
                             <h3 class="table__title">J.Crew Mercentile Women's Short-Sleeve</h3>
                             <p class="table__description">Moboriosam in a tonto nesciung eget distingy magndapibus.</p>
                         </td>
 
-                        <td><span class="table__price">$110</span></td>
+                        <td><span class="table__price">₹110</span></td>
 
                         <td><span class="table__stock">In stock</span></td>
 
@@ -134,14 +146,14 @@
                     </tr>
 
                     <tr>
-                        <td><img src="./Assets/IMG/product-7-1.jpg" alt="" class="table__img"></td>
+                        <td><img src="./Assets/IMG/product-16-1.webp" alt="" class="table__img"></td>
 
                         <td>
                             <h3 class="table__title">Amazon Essentials Women's Tank</h3>
                             <p class="table__description">Moboriosam in a tonto nesciung eget distingy magndapibus.</p>
                         </td>
 
-                        <td><span class="table__price">$110</span></td>
+                        <td><span class="table__price">₹110</span></td>
 
                         <td><span class="table__stock">In stock</span></td>
 
@@ -151,14 +163,14 @@
                     </tr>
 
                     <tr>
-                        <td><img src="./Assets/IMG/product-2-1.jpg" alt="" class="table__img"></td>
+                        <td><img src="./Assets/IMG/product-41-1.jpg" alt="" class="table__img"></td>
 
                         <td>
                             <h3 class="table__title">Amazon Brand - Daily Ritual Women's Jersey</h3>
                             <p class="table__description">Moboriosam in a tonto nesciung eget distingy magndapibus.</p>
                         </td>
 
-                        <td><span class="table__price">$110</span></td>
+                        <td><span class="table__price">₹110</span></td>
 
                         <td><span class="table__stock">In stock</span></td>
 
@@ -169,15 +181,15 @@
             </div>
         </section>
 
-         <!-- =============== NEWSLETTER =============== -->
-         <section class="newsletter section home__newsletter">
+        <!-- =============== NEWSLETTER =============== -->
+        <section class="newsletter section home__newsletter">
             <div class="newsletter__container container grid">
                 <h3 class="newsletter__title flex">
                     <img src="./Assets/IMG/icon-email.svg" alt="" class="newsletter__icon">
                     Sign up to Newsletter
                 </h3>
 
-                <p class="newsletter__description">...and receive $25 coupon for first shopping</p>
+                <p class="newsletter__description">...and receive ₹25 coupon for first shopping</p>
 
                 <form action="" class="newsletter__form">
                     <input type="text" placeholder="Enter your email" class="newsletter__input">
@@ -272,8 +284,8 @@
         </div>
 
         <div class="footer__bottom">
-            <p class="copyright">&copy; 2023 Evara. All rights reserved</p>
-            <span class="designer">Designed by CrypticalCoders</span>
+            <p class="copyright">&copy; 2024 Evara. All rights reserved</p>
+            <span class="designer">Designed by Prachi Thacker</span>
         </div>
     </footer>
 
@@ -284,4 +296,5 @@
     <!-- =============== MAIN JS =============== -->
     <script src="Assets/js/main.js"></script>
 </body>
+
 </html>

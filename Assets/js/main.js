@@ -15,11 +15,42 @@ if(navToggle) {
 // Validate if constant exists
 if(navClose) {
     navClose.addEventListener('click' , () => {
-        navMenu.classList.remove('show-menu');
+        navMenu.classList.remove('show-menu'); 
     })
 }
 
+// Carousel JS
+let slideIndex = 0;
+  const slides = document.querySelectorAll('.carousel-item');
+  const totalSlides = slides.length;
 
+  function showSlides() {
+    slides.forEach((slide) => {
+      slide.style.display = 'none';
+    });
+    slides[slideIndex].style.display = 'block';
+  }
+
+  function prevSlide() {
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    showSlides();
+  }
+
+  function nextSlide() {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    showSlides();
+  }
+
+  function autoSwipe() {
+    setInterval(() => {
+      nextSlide();
+    }, 3000);
+  }
+
+  showSlides();
+  autoSwipe();
+
+  
 // =============== IMAGE GALLERY ===============
 function imgGallery() {
     const mainImg = document.querySelector('.details__img'),
